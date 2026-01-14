@@ -1,4 +1,4 @@
-# NanoGPT-from-scratch-with-muon
+# NanoGPT-from-scratch-with-muon (Work in Progress)
 
 This repository contains a highly optimized training recipe to "speedrun" a GPT-2 124M-class model to < 3.28 validation loss (the OpenAI baseline) using a single consumer laptop GPU.
 
