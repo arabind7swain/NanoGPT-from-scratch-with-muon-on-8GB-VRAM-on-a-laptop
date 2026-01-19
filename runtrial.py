@@ -2,7 +2,7 @@
 """
 Improved GPT-2 training with:
 - FlexAttention with document boundary masking
-- FP8 (e4m3fn) Linear Layers for RTX 4090 speedup (Forward pass only)
+- FP8 (e4m3fn) Linear Layers for RTX 5070 speedup (Forward pass only)
 - Reduced Context (1024) for efficiency
 - Progressive attention window (curriculum learning)
 - Muon Optimizer
@@ -792,3 +792,4 @@ for step in range(args.num_iterations + 1):
 
 print(f"peak memory consumption: {torch.cuda.max_memory_allocated() // 1024 // 1024} MiB")
 print0(f"Training complete! Final run_id: {run_id}")
+
