@@ -2,7 +2,7 @@
 
 This repository contains a highly optimized training recipe to "speedrun" a GPT-2 124M-class model to < 3.28 validation loss (the OpenAI baseline) using a single consumer laptop GPU.
 
-The target: 3.28 Validation Loss in under 180 minutes on an RTX 4050 mobile arvhitecture. Currently it takes about 4.5 hrs.
+The target: 3.28 Validation Loss in under 180 minutes on an RTX 5070 mobile arvhitecture. Currently it takes about 4.5 hrs.
 🛠 Features & Architecture
 
 We use a "Modded-NanoGPT" architecture that deviates from the 2019 original to maximize hardware utilization:
