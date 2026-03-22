@@ -37,6 +37,6 @@ To run this on a laptop with 8GB VRAM (standard for 5070 Mobile):
 * **Async Data Loading:** Custom `AsyncDataLoader` with pinned memory to saturate the GPU (zero PCIe bottlenecks).
 * **Curriculum Learning:** Progressive context window (starts at 256, ends at 1792) to save compute in the early phase.
 * **FP8 Training:** Enabled via `torchao` for linear layers.
-* **Progressive Windowing:** Training starts at a 256 context length and scales to 1792, saving massive compute in the early phase.
+
 ---
 
