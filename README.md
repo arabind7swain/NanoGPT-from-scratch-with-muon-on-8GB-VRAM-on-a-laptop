@@ -2,7 +2,15 @@
 
 This repository contains a highly optimized training recipe to "speedrun" a GPT-2 124M-class model to < 3.28 validation loss (the OpenAI baseline) using a single consumer laptop GPU.
 
-The target: 3.28 Validation Loss in under 180 minutes on an RTX 5070 mobile arvhitecture. Currently it takes about 4.5 hrs.
+3.28 Validation Loss takes about 240 mins for **[FineWeb](https://huggingface.co/datasets/HuggingFaceFW/fineweb)** dataset and 150 mins for **[Nemotron-ClimbMix](https://huggingface.co/datasets/nvidia/Nemotron-ClimbMix)** dataset. 
+
+### Loss curve for FineWeb dataset
+
+<img src="time_convergence_plot(Fineweb).png" alt="fineweb" />
+
+### Loss curve for Climbmix dataset
+
+<img src="time_convergence_plot(Climbmix2).png" alt="climbmix" />
 🛠 Features & Architecture
 
 We use a "Modded-NanoGPT" architecture that deviates from the 2019 original to maximize hardware utilization:
